@@ -1,7 +1,7 @@
 export const onboardingSwiperData: onboardingSwiperDataType[] = [
     {
       id: 1,
-      title: "Start your learning journey with dose of fun!",
+      title: "Start your learning journey today!",
       description: "Our engaging learning materials will spark",
       sortDescrition: "your curiosity & make learning enjoyable.",
       image: require("@/assets/images/image2.png"),

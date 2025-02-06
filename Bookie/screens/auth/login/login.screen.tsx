@@ -211,7 +211,7 @@ export default function LoginScreen() {
           </TouchableOpacity>
 
           <Animated.View style={{ transform: [{ scale: buttonScale }] }}>
-            <TouchableOpacity style={styles.signInButton} onPress={handleSignIn}>
+            <TouchableOpacity style={styles.signInButton} onPress={() => router.push("/(routes)/verifyAccount")}>
               {buttonSpinner ? (
                 <ActivityIndicator size="small" color={"white"} />
               ) : (
