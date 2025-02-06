@@ -9,6 +9,7 @@ import 'react-native-reanimated';
 
 import { useColorScheme } from '@/components/useColorScheme';
 import OnBoarding from './(routes)/onboarding';
+import WelcomeIntro from './(routes)/welcome-intro';
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -52,7 +53,11 @@ function RootLayoutNav() {
           <View>
             </View>
         ) : (
-          <OnBoarding />
+          <Stack screenOptions={{ headerShown: false }}>
+            <Stack.Screen name="index"/>
+            <Stack.Screen name="(routes)/welcome-intro/index.tsx"/>
+            <OnBoarding />
+          </Stack>
         ) }
     </ThemeProvider>
   );

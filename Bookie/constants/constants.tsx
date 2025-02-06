@@ -2,15 +2,15 @@ export const onboardingSwiperData: onboardingSwiperDataType[] = [
     {
       id: 1,
       title: "Start your learning journey with dose of fun!",
-      description: "Our engaging learning videos will spark",
-      sortDescrition: "your curiosity & enjoyable.",
+      description: "Our engaging learning materials will spark",
+      sortDescrition: "your curiosity & make learning enjoyable.",
       image: require("@/assets/images/image2.png"),
     },
     {
       id: 2,
       title: "Discover your passion, elevate your expertise",
-      description: "Our comprehensive our courses and expert",
-      sortDescrition: "instructors to guide every step.",
+      description: "Our comprehensive courses and expert",
+      sortDescrition: "instructors to guide you every step of the way.",
       image: require("@/assets/images/image3.png"),
     },
     {
