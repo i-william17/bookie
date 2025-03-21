@@ -1,1 +1,2 @@
-export const SERVER_URI = "https://lms-mobile-app-alde.onrender.com/api/v1";
+//export const SERVER_URI = "https://lms-mobile-app-alde.onrender.com/api/v1";
+export const SERVER_URI = "http://localhost:8000/api/v1" || "http://192.168.0.179:8000/api/v1" || "http://192.168.0.188:8000/api/v1" ; 
