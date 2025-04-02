@@ -18,7 +18,7 @@ export default function WelcomeIntroScreen() {
   });
 
   if (!fontsLoaded && !fontError) {
-    return null;
+    return null;  
   }
 
   const renderItem = ({ item }: { item: onboardingSwiperDataType }) => (

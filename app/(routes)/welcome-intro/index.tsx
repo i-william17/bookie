@@ -1,5 +1,7 @@
-import WelcomeIntoScreen from "@/screens/welcome/welcome.intro";
+import WelcomeIntroScreen from "@/screens/welcome/welcome.intro";
 
 export default function WelcomeIntro() {
-    return <WelcomeIntoScreen />;
+    return (
+        <WelcomeIntroScreen />
+    )
 }

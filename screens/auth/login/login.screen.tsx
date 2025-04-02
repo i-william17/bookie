@@ -118,7 +118,10 @@ export default function LoginScreen() {
       .post(`${SERVER_URI}/login`, {
         email: userInfo.email,
         password: userInfo.password,
-      })
+      },
+        {
+          headers: { "Content-Type": "application/json" },
+        })
       .then(async (res) => {
         await AsyncStorage.setItem("access_token", res.data.accessToken);
         await AsyncStorage.setItem("refresh_token", res.data.refreshToken);
@@ -126,6 +129,7 @@ export default function LoginScreen() {
       })
       .catch((error) => {
         console.log(error);
+        console.log(userInfo);
         Toast.show("Email or password is not correct!", {
           type: "danger",
         });
@@ -211,7 +215,7 @@ export default function LoginScreen() {
           </TouchableOpacity>
 
           <Animated.View style={{ transform: [{ scale: buttonScale }] }}>
-            <TouchableOpacity style={styles.signInButton} onPress={handleSignIn}>
+            <TouchableOpacity style={styles.signInButton} onPress={(handleSignIn)}>
               {buttonSpinner ? (
                 <ActivityIndicator size="small" color={"white"} />
               ) : (
